@@ -1,0 +1,215 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{CJKutf8}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingOneline}[3]{
+  \item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 &
+      \textit{\small#3}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubTitle}[1]{
+  \vspace{-10pt} \\
+  {#1} \\
+  \vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\begin{CJK}{UTF8}{gkai}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \large 姓名: 李健& \large 邮箱 : lj\_cs@foxmail.com\\
+  \large 出生年月: 1995.09  & \large 电话 : 13120362233\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{教育经历}
+  \resumeSubHeadingListStart
+    \resumeSubheadingOneline
+      {北京航空航天大学}{计算机科学与技术硕士}{2015.09 -- 2018.04}
+    \resumeSubheadingOneline
+      {长沙理工大学}
+      {\quad网络工程学士}{2011.09 -- 2015.06}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{工作经历}
+  \resumeSubHeadingListStart
+    \resumeSubheadingOneline
+      {快手}
+      {\quad\quad\quad\quad\quad音视频技术部大数据研发工程师}{2019.10 -- 至今}
+      \resumeItemListStart
+        \resumeItem{}
+          {}
+        \resumeItem{}
+          {}
+        \resumeItem{}
+          {}
+        \resumeItem{}
+          {}
+        \resumeItem{}
+          {}
+      \resumeItemListEnd
+      \resumeSubheadingOneline
+      {百度}
+      {\quad\quad\quad\quad\quad\quad\quad知识图谱部离线架构研发工程师}{2018.04 -- 2019.09}
+      \resumeItemListStart
+        \resumeItem{}
+          {}
+        \resumeItem{}
+          {}
+        \resumeItem{}
+          {}
+        \resumeItem{}
+          {}
+        \resumeItem{}
+          {}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{项目经验}
+  \resumeSubHeadingListStart
+    \resumeSubItem{QuantSoftware Toolkit}
+      {Open source python library for financial data analysis and machine learning for finance.}
+    \resumeSubItem{Github Visualization}
+      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+    \resumeSubItem{Recommendation System}
+      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+    \resumeSubItem{Mac Setup}
+      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{专业技能}
+  \resumeSubHeadingListStart
+    \resumeSubItem{语言: }
+      {熟悉Java, Python, shell工程开发, 熟悉Javascript等脚本开发}
+    \resumeSubItem{Github Visualization}
+      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+    \resumeSubItem{Recommendation System}
+      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+    \resumeSubItem{Mac Setup}
+      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{CJK}
+\end{document}
