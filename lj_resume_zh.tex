@@ -129,12 +129,12 @@
   \resumeSubHeadingListStart
     \resumeSubheadingOneline
       {快手}
-      {\quad\quad\quad\quad\quad音视频技术部大数据研发工程师}{2019.10 -- 至今}
+      {\quad\quad\quad\quad\quad音视频技术部数据研发组研发工程师}{2019.10 -- 至今}
       \resumeItemListStart
         \resumeItem{}
-          {实时数据开发和实时数仓建设}
+          {实时数据开发和数仓建设}
         \resumeItem{}
-          {音视频故障检测和归因系统设计与开发}
+          {音视频异常检测和归因系统设计与开发}
         \resumeItem{}
           {指标管理以及相应的查询订阅服务、质量管理能力建设}
         \resumeItem{}
@@ -142,12 +142,12 @@
       \resumeItemListEnd
       \resumeSubheadingOneline
       {百度}
-      {\quad\quad\quad\quad\quad\quad\quad知识图谱部离线架构研发工程师}{2018.04 -- 2019.09}
+      {\quad\quad\quad\quad\quad\quad\quad知识图谱部离线架构组研发工程师}{2018.04 -- 2019.09}
       \resumeItemListStart
         \resumeItem{}
-          {百度知识库数据存储系统Restful接口，RPC服务开发以及权限系统的升级和维护}
+          {百度知识库数据存储系统Restful批处理接口，流计算场景下的RPC服务开发}
         \resumeItem{}
-          {知识计算框架实体检索模块优化}
+          {知识计算框架实体检索模块优化以及算子网关开发}
         \resumeItem{}
           {百度知识图谱SPO收录机制的开发}
         \resumeItem{}
@@ -171,9 +171,9 @@
 \section{专业技能}
   \resumeSubHeadingListStart
     \resumeSubItem{}
-      {熟悉Java、Python工程开发; 熟悉sql, shell, Javascript等脚本开发}
+      {熟悉Java栈、Python工程开发; 熟悉sql, shell, Javascript等脚本开发}
     \resumeSubItem{}
-      {熟悉流处理框架Flink, 具有相应的实时数据开发经验; 以及批处理框架Hadoop MR,Hive}
+      {熟悉流处理框架Flink, 以及Hadoop生态Yarn、Hive、Spark}
     \resumeSubItem{}
       {熟悉OLAP引擎Clickhouse, Druid, NoSQL存储引擎HBase, Elasticsearch}
     \resumeSubItem{}
@@ -190,34 +190,34 @@
 %-----------PROJECTS-----------------
 \section{项目经验}
   \resumeSubHeadingListStart
-    \resumeSubItem{快手-音视频实时数仓}{}
+    \resumeSubItem{快手-音视频体验优化实时数仓}{}
     \resumeItemListStart
         \resumeItem{}
-          {项目描述: }
+          {项目描述: 面向快手主站和海外产品下音视频全链路上报数据, 基于音视频指标体系构建实时数仓, 支持CDN质量管理、排障、实时A/B、OLAP数据分析、策略算法模型及异常检测归因等数据应用}
         \resumeItem{}
-          {主要工作: 1. 快手直播全链路质量和点播生产侧质量实时数仓建设 2. 流批一体能力建设 3. 活动时数据重保}
+          {主要工作: 1. 快手直播全链路质量实时数仓建设, 从主播推流、源站、CDN分发、拉流 2. 流批一体能力建设 3. 活动时数据重保}
         \resumeItem{}
-          {难点:}
+          {难点: 1. GB级别下的实时数据开发和参数调优 2. 音视频业务场景复杂带来的维度多、链路长、数据不完全、数据不统一等难点 3. 高效的流批一体以及实时数据回放机制设计 4. 快手活动给数据任务保障带来的挑战}
         \resumeItem{}
-          {相关技术: Flink、Clickhouse、Druid、ES、数仓建模、redis}
+          {相关技术: Flink、Clickhouse、Druid、ES、数仓建模、Hadoop}
     \resumeItemListEnd
-    \resumeSubItem{快手-音视频故障检测与归因系统}{}
+    \resumeSubItem{快手-音视频异常检测与归因系统}{}
     \resumeItemListStart
     \resumeItem{}
-      {项目描述:}
+      {项目描述: 系统目前共接入共计160+个指标，覆盖了快手主站、海外Kwai以及其他音视频中台支持产品下点播、生产、直播、网络库、图片业务等主题域下10多个业务过程; 快手主站直播全链路监控建设发现90\%直播故障, 问题定位的效率从13分钟提高到0min, 近三个月21起有效反馈; 主站核心指标准确率达92\%; 音视频中台支持产品故障发现效率天级降到分钟级; 支持CDN自动故障调度，故障恢复时长从日均7h可以降低到5min, 并且为为CDN云厂商服务质量优化提供了长效的数据支持和评价依据}
     \resumeItem{}
-      {主要工作: 系统整体架构和开发 }
+      {主要工作: }
     \resumeItem{}
-      {难点: 1.}
+      {难点: 1. }
     \resumeItem{}
-      {相关技术: 1. }
+      {相关技术: 1. 服务编排Conductor 2. gRPC}
     \resumeItemListEnd
     \resumeSubItem{快手-音视频指标管理服务}{}
     \resumeItemListStart
     \resumeItem{}
-      {项目描述:}
+      {项目描述: }
     \resumeItem{}
-      {主要工作:}
+      {主要工作: 1. }
     \resumeItem{}
       {难点:}
     \resumeItem{}
@@ -226,24 +226,20 @@
     \resumeSubItem{百度-知识库数据存储系统}{}
     \resumeItemListStart
     \resumeItem{}
-      {项目描述:}
+      {项目描述: 基于Hbase(300个节点)开发的一套PB级别知识库数据存储系统, 支撑百度知识图谱PB级全量数据和每天约200TB的增量更新, 主要实现以下功能, 1)提供大规模结构化数据存储服务 2)封装了常见的HbaseAPI操作: 包括数据批量和单条的CRUD操作，简化了用户使用Hbase的成本 3)在Hbase基础上增加了一套权限控制方案 4)提供了数据备份、容灾机制 5)为数据提供了干预、回灌等功能，为数据生产提供了遍历}
     \resumeItem{}
       {主要工作: 1. RESTful和RPC接口开发 2. 权限系统升级和维护 3. 运维工具开发} 
     \resumeItem{}
-      {难点:}
-    \resumeItem{}
-      {相关技术: 1. Java多线程, 网络编程 2. HBase客户端开发 3. Elasticsearch}
+      {相关技术: 1. Java多线程, 网络编程 2. HBase客户端开发 3. RPC服务}
     \resumeItemListEnd
-    \resumeSubItem{百度-知识库数据存储系统}{}
+    \resumeSubItem{百度-知识计算框架KB检索模块优化}{}
     \resumeItemListStart
     \resumeItem{}
-      {项目描述:}
+      {项目描述: 知识计算框架对知识的计算, 存储功能进行了封装, 实现了DAG任务流。检索模块为其中的一个工作任务(组件)，支持spo消歧等任务, 在elasticsearch(48台机器)索 引(10亿文档)中对数据进行查询; 从搜索策略、es索引调整、集群部署优化三个方面进行了优化，服务qps由100提升到700}
     \resumeItem{}
-      {主要工作: 1. RESTful和RPC接口开发 2. 权限系统升级和维护 3. 运维工具开发} 
+      {主要工作: KB检索模块优化方案设计和代码开发} 
     \resumeItem{}
-      {难点:}
-    \resumeItem{}
-      {相关技术: 1. Java多线程, 网络编程 2. HBase客户端开发 3. Elasticsearch}
+      {相关技术:  1. elasticserach, mongodb 2. python开发}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
