@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{textcomp}
+\usepackage{CJKutf8}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingOneline}[3]{
+  \item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+      \textbf{\small{#1}} & \small#2 &
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7
+    pt}
+}
+
+\newcommand{\resumeSubTitle}[1]{
+  \vspace{-10pt} \\
+  {#1} \\
+  \vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-5pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\begin{CJK}{UTF8}{gkai}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \large 姓名: 李健& \large 邮箱 : lj\_cs@foxmail.com\\
+  \large 出生年月: 1995.09  & \large 电话 : 13120362233\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{教育经历}
+  \resumeSubHeadingListStart
+    \resumeSubheadingOneline
+      {北京航空航天大学}{计算机科学与技术硕士(校奖学金)}{2015.09 -- 2018.04}
+    \resumeSubheadingOneline
+      {长沙理工大学}
+      {\quad网络工程学士(校奖学金,湖南省优秀毕业生)}{2011.09 -- 2015.06}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+%-----------EXPERIENCE-----------------
+\section{工作经历}
+  \resumeSubHeadingListStart
+    \resumeSubheadingOneline
+      {快手}
+      {\quad\quad\quad\quad\quad音视频技术部体验优化中心数据研发组 研发工程师}{2019.10 -- 至今}
+      \resumeSubheadingOneline
+      {百度}
+      {\quad\quad\quad\quad\quad\quad\quad知识图谱部知识获取组离线架构方向  研发工程师}{2018.04 -- 2019.09}
+      \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{专业技能}
+  \resumeSubHeadingListStart
+   \resumeSubItem{}
+  {拥有丰富的大数据应用开发经验, 包括流批数据处理(Flink, Spark等)、OLAP引擎(Clickhouse等), NoSQL (HBase, ES等)的使用}
+  \resumeSubItem{}{理解微服务架构, 具有微服务架构下的应用开发经验(Spring Boot, gRPC)}
+  \resumeSubItem{}{业务相关: 熟悉音视频体验优化领域以及知识图谱离线架构下相关业务, 以及从数据采集上报、加工计算、存储到应用整体的服务链路}
+  \resumeSubItem{}{拥有较强的架构能力, 独立负责过项目的设计和实现}
+  \resumeSubItem{}{熟悉aiops领域算法, 以及音视频领域下转码热度算法}
+  \resumeSubHeadingListEnd
+  
+  %-----------PROJECTS-----------------
+\section{工作经验}
+  \resumeSubHeadingListStart
+    \resumeSubItem{快手-音视频体验监控服务\vspace{2pt}}
+    {\\面向快手主站和海外产品下音视频全链路客户端及服务端日志上报 
+    \\\textbf{1)} 基于音视频QoS/QoE指标体系构建音视频体验优化实时/离线数仓, 支持音视频体验多维监控、分析BI看板以及日志排障, 实时数仓链路Flink+Clickhouse + ES, 其中Clickhouse支持多维监控和看板分析, ES支持日志排障, 离线数仓链路Hive + Spark; 
+    \\\textbf{2)} 在体验优化实时数仓之上，建设模板取数和指标管理数据服务层, 向上层应用提供统一的数据服务(Spring boot RestFul以及gRPC)和数据出口提高用数和管理效率, 并且通过建设实时生产全链路血缘和数据质量监控, 对数据生产的稳定性进行保障; 
+    \\\textbf{3)} 基于数据服务层, 构建音视频服务全链路排障和故障检测归因系统, 其中故障检测归因系统基于流程编排引擎(Conductor + Kwaiflow),Spark,HBase高效支持AIOps智能算法能力建设; 在故障检测归因系统之上支持标准的报警触达、监控治理和直播点播CDN自动故障调度
+    \\\textbf{本人主要负责监控领域下实时数据开发和数仓建设, 横向数据质量保障工作, 以及排障和故障检测归因系统的架构设计和实现},  主要成果如下:
+   }
+    \resumeItemListStart
+        \resumeItem{高性能实时数仓建设: } {在大规模量数据下(监控领域下日志上报QPS百万级, 吞吐GB/S, 日增量行数千亿级、大小TB级), 标准化监控领域下数仓分层建设, Clickhouse查询耗时P95 7.2s, P99 12s, 计算和存储(Flink、Clickhouse)月成本优化降低10w+}
+        \resumeItem{数据质量保障: } {通过技术层面的保障能力建设, 运营层面的治理, 以及流程规范化进行了数据质量的保障, 监控领域下数据延迟P95 min, P99 min, 部门内数据故障复盘年度2例降为0例, 保障支持了春晚等大型活动}
+        \resumeItem{智能故障检测归因系统: }
+          {\textbf{1)}标准化音视频体验故障检测业务流程和能力定义 \textbf{2)}引入14类AIOps领域智能算法(快手首个在大规模时序数量700w+下建设智能算法), 并通过架构优化高效支持算法落地和准招保障, 最终整体异常检测准确率 + 44 pp, 召回率 + 31 pp, 异常发现时间中位数提前 10 min; 根因诊断：准确率80\%,直接定位根因比例50\%; 业务监控报警人效提升60\%;
+          }
+
+    \resumeItemListEnd
+    \resumeSubItem{快手-视频热度实时推理服务\vspace{2pt}}
+    {\\ROI频转码系统作为快手音视频成本优化方向的主要项目, 基于作品实时热度和ROI优先级机制, 优化转码价值评估精度, 节省点播视频消费带宽成本年化收益达\textbf{1.5亿+}, 视频热度实时推理服服务作为整个系统的实时推理层, 消费视频播放行为日志进行不同程度的聚合得到长短期热度特征, 并使用离线训练完成的模型推理得到预测的热度用于下游视频转码任务调度。服务采用Flink完成实时的特征计算, 基于PMML框架完成在线的模型推理得到视频热度预测值分发下游触发异步转码
+    \\\textbf{本人负责服务的工程架构设计实现, 以及稳定性保障工作}, 主要成果如下:
+    }
+    \resumeItemListStart
+        \resumeItem{高可用性保障: } {通过A/B, 数据自动化校验, 热备链路双机房, 状态性能优化等, 保证了服务SLA达99.999\%}
+        \resumeItem{业务使用效率提升: } {通过SQL + UDF等手段将服务模块接口化, 高效率支持主站、电商、商业化、海外、toB等业务, 取得成本和GMV收益}
+    \resumeItemListEnd
+    \resumeSubItem{百度-知识图谱业务离线架构\vspace{2pt}}{
+      \\知识图谱离线架构方向主要包括有\textbf{1)} 基于HBase(300个节点)面向图谱数据处理和查询场景封装的PB级结构化存储服务KGBase,提供建库、入库、出库、干预、回灌等批处理接口, 以及相应的RPC服务提供在线读写接口; \textbf{2)} 基于PUMA框架, Kafka, Paas等基础设施封装的流式计算框架Mario, 支持流式数据处理和策略开发, 进一步支持SPO流收录、线上卡片等业务; \textbf{3)} 基于ES(48台机器, 10亿文档)构建的KB实体检索服务支持在线策略对实体消歧等业务; 
+      \\\textbf{本人主要负责KGBase的批处理接口, RPC服务开发; 实体检索性能优化; 知识图谱算子服务化; 运维脚本开发等工作}, 主要成果如下: 
+    }
+    \resumeItemListStart
+        \resumeItem{KGBase RPC服务性能优化: } {通过RPC框架性能, KGBase业务代码逻辑优化, HBase数据传输效率三个方面进行服务性能优化, 随机读场景单机QPS从20000优化到55000, 提升175\% }
+        \resumeItem{实体检索性能优化: } {从搜索策略, ES索引调整, 集群部署三个方面进行了优化, 服务qps由100提升到700}
+        \resumeItem{知识图谱算子服务化: } {构建了统一的KG算子网关服务, 提供审批流, 鉴权, 限流等功能, 支持了实体标注算子等知识图谱能力的对外输出, 包括搜索等业务部门}
+        \resumeItem{}{hdfs, kafka等基础设施的运维脚本开发, 提高运维人效}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{CJK}
+\end{document}
